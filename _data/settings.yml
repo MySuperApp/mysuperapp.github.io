@@ -10,10 +10,6 @@ description: "Self-Custodial Bitcoin Retairement."
 # Menu Settings
 menu__settings:
   menu__items:
-    - title: 'Home'
-      url: '/'
-    - title: 'About'
-      url: '/about/'
     
 
 
