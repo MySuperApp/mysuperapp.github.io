@@ -1,0 +1,30 @@
+<style>
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+</style>
+<div class="ar-post-item">
+   <div class="blog-style d-flex align-items-end" style="background-image: url({{posts.post_image}});">
+      <video autoplay muted loop id="myVideo">     
+         <source src="{{posts.post_video}}" type="video/mp4">
+      </video>
+      <div class="container">
+         <div class="light-text blog-content wow slideInLeft {% if item != 0 %} blog-right {% endif %}"
+            data-wow-duration=".4s">
+            <ul class="blog-date list-inline">
+               <li class="list-inline-item">{{posts.prefix }}</li>
+            </ul>
+            <h2 class="heading-2"><a href="{{posts.url}}">{{posts.title}}</a></h2>
+            <p class="text-white">{{posts.description}}</p>
+            <!--a href="{{posts.url}}" class="blog-read-more">Read More <i class="fas fa-angle-right"></i></a-->
+         </div>
+      </div>
+   </div>
+</div>

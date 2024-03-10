@@ -1,47 +1,37 @@
-<!-- begin header -->
-<header class="header">
-  <div class="container">
-    <div class="row">
-      <div class="header__inner col col-12">
-
-        <div class="logo">
-          <a class="logo__link" href="{{ site.baseurl }}/">
-          {% if site.data.settings.logo %}
-            <img class="logo__image" src="{{ site.baseurl }}{{ site.data.settings.logo }}" alt="{{ site.data.settings.title }}">
-          {% else %}
-            {{ site.data.settings.title }}
-          {% endif %}
-          </a>
-        </div>
-
-        <nav class="main-nav">
-          <div class="main-nav__box">
-            <div class="nav__icon-close">
-              <i class="ion ion-md-close"></i>
+<!-- Start Header Area -->
+<header class="header-area">
+   {% if page.layout == "post" or page.layout == "page" %}
+   <div class="header-nav  {% if page.dark_header == false %} header-nav-white {% endif %} ">
+   {% else %}
+   <div class="header-nav  {% if site.dark_header == false %} header-nav-white {% endif %} ">
+      {% endif %} 
+      <div class="container">
+         <div class="row">
+            <div class="col-4">
+               <a class="header-logo" href="{{site.url}}"><img src="{{site.logo_url}}" alt="{{site.title}}"></a>
             </div>
-            <div class="nav__title">Menu</div>
-            <ul class="nav__list list-reset">
-              {% for item in site.data.settings.menu__settings.menu__items %}
-                <li class="nav__item">
-                  <a href="{{ item.url | relative_url }}" class="nav__link{% if page.url == item.url %} nav__link--current{% endif %}">{{ item.title }}</a>
-                </li>
-              {% endfor %}
-              <li class="nav__item">
-                <div class="toggle-theme">
-                  <div class="toggle-moon" title="Enable dark mode"><i class="ion ion-ios-moon"></i></div>
-                  <div class="toggle-sun" title="Enable light mode"><i class="ion ion-ios-sunny"></i></div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
-        <div class="nav-button">
-          <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
-        </div>
-
+         </div>
       </div>
-    </div>
-  </div>
+   </div>
+   <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h4 class="modal-title" id="myModalLabel">Search from site</h4>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <!-- Actual search box -->
+               <div class="form-group has-search">
+                  <span class="fa fa-search form-control-feedback"></span>
+                  <input id="search-input" type="text" class="form-control" placeholder="Search">
+               </div>
+               <ul id="results-container"></ul>
+            </div>
+         </div>
+      </div>
+   </div>
 </header>
-<!-- end header -->
+<!-- End Header Area -->
