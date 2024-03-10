@@ -50,9 +50,10 @@
 </div>
 {% endif %}
 {% if page.layout == "page" %}
-<div class="d-flex align-items-center header-page-title" style="background-image: url(
-{% if page.post_image %} {{page.post_image}} {% else %} {{ site.cover_image }} {% endif %}
-);">
+<div class="d-flex align-items-center header-page-title blog-style" style="max-height: 25px;">
+   <video autoplay muted loop playsinline id="myVideo">     
+      <source src="{{page.post_video}}" type="video/mp4">
+   </video>
    <div class="container">
       <div class="page-title-box">
          <h1 class="heading-big {% if page.dark_header == false %} text-white {% endif %}">{{page.title}}</h1>

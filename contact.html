@@ -3,20 +3,47 @@ layout: page
 title: Contact
 parmalink: /contact
 dark_header: false
+post_video: /assets/images/boats.mp4
 ---
-
-
+   
        <div class="mb-5">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14473.181104685187!2d89.939336!3d24.92200900000001!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1547232143853" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-       </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.6120031565847!2d151.20144357649264!3d-33.87388887322459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae3b8ca5a91d%3A0x1677de5064e58209!2s9%2F287%20Sussex%20St%2C%20Sydney%20NSW%202000!5e0!3m2!1spl!2sau!4v1710059372790!5m2!1spl!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
+    </div>
        <div class="row mb-5">
-           <div class="col-md-4">
+        <div class="col-md-4">
+            <div class="contact-info">
+                <div class="contact-info-logo">
+                    <img src="{{site.baseurl}}/assets/images/contact-info-icon2.png" alt="contact info icon">
+                </div>
+                <div class="contact-info-content">
+         <form
+            action="https://formspree.io/f/xdoqddbb"
+            method="POST"
+          >
+          <label>
+              Your email:<br>
+              <input type="email" name="email">
+            </label><br>
+            <label>
+              Your message:<br>
+              <textarea name="message" style="height: 200px;
+              width: 300px;"></textarea>
+            </label><br>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+          </form>
+                </div>
+            </div>
+        </div>
+           
+        <div class="col-md-4">
                <div class="contact-info">
                    <div class="contact-info-logo">
                        <img src="{{site.baseurl}}/assets/images/contact-info-icon.png" alt="contact info icon">
                    </div>
                    <div class="contact-info-content">
-                       <p>622 Dixie Path, South Tobinchester, <br>UT 98336</p>
+                       <p>281-287 Sussex St <br/>
+                        Sydney, NSW, 2000</p>
                    </div>
                </div>
            </div>
@@ -26,22 +53,10 @@ dark_header: false
                        <img src="{{site.baseurl}}/assets/images/contact-info-icon2.png" alt="contact info icon">
                    </div>
                    <div class="contact-info-content">
-                       <p><a href="#">toni14@hotmail.com</a> <br>
-                              <a href="#">idavis@yahoo.com</a></p>
+                       <p><a href="#">info@my-super.app</a>
                    </div>
                </div>
            </div>
-           <div class="col-md-4">
-               <div class="contact-info mb-0">
-                   <div class="contact-info-logo">
-                       <img src="{{site.baseurl}}/assets/images/contact-info-icon3.png" alt="contact info icon">
-                   </div>
-                   <div class="contact-info-content">
-                       <p>(633) 497-1888 <br>
-                              (477) 722-2796</p>
-                   </div>
-               </div>
-           </div>
+           
        </div>
-       {% include contact_form.html %}
-   
+      
