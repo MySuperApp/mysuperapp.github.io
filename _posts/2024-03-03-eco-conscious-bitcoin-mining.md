@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Eco-Conscious Bitcoin Mining"
-description: "Your SMSF can participate in an eco-friendly Bitcoin mine. Investing in our Bitcoin Mining operations means acquiring a stake in our environmentally conscious mining facility. This strategy offers you the chance to diversify your investment portfolio while earning Bitcoin over time. Our commitment to sustainability and innovation shines through in our mining facilities, which are powered entirely by renewable energy sources."
+description: "Your SMSF can participate in an eco-friendly Bitcoin Mine. Investing in Bitcoin Mining operations means acquiring a stake in an environmentally conscious mining facility. This strategy offers you the chance to diversify your investment portfolio while earning Bitcoin over time. Our commitment to sustainability and innovation shines through in our Bitcoin Mines, which are powered entirely by renewable energy sources."
 date: 2024-03-04 10:59:37 +0600
 prefix: Dividend
 #post_image: /assets/images/page3.png 
