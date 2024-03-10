@@ -23,8 +23,10 @@
             </ul>
             <h2 class="heading-2"><a href="{{posts.url}}">{{posts.title}}</a></h2>
             <p class="text-white">{{posts.description}}</p>
-            <!--a href="{{posts.url}}" class="blog-read-more">Read More <i class="fas fa-angle-right"></i></a-->
+            <a href="#scrolltobegin{{posts.url}}" class="blog-read-more">Scroll Down <i class="fas fa-angle-down"></i></a> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+            <a href="{{posts.url}}" class="blog-read-more">Read More <i class="fas fa-angle-right"></i></a>
          </div>
       </div>
    </div>
 </div>
+<h6 id="scrolltobegin{{posts.url}}" style="visibility: hidden;"></h6>

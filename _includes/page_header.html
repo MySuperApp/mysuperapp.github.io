@@ -1,3 +1,15 @@
+<style>
+   #myVideo {
+     position: fixed;
+     right: 0;
+     bottom: 0;
+     min-width: 100%;
+     min-height: 100%;
+     position: absolute;
+     object-fit: cover;
+   }
+</style>   
+   
 {% if page.layout == "category" or page.layout == "author" or page.layout == "tag"%}
 <div class="d-flex align-items-center header-page-title" style="background-image: url({{site.cover_image}});">
    <div class="container">
@@ -16,15 +28,15 @@
 </div>
 {% endif %}
 {% if page.layout == "post" %}
-<div class="d-flex align-items-center header-page-title" style="background-image: url(
-{% if page.post_image %} {{page.post_image}} {% else %}{{ site.cover_image }}{% endif %}
-);">
+<div class="d-flex align-items-center header-page-title">
+   <video autoplay muted loop playsinline id="myVideo">     
+      <source src="{{page.post_video}}" type="video/mp4">
+   </video>
    <div class="container">
       <div class="page-title-box">
-         <h1 class="heading-big {% if page.dark_header == false %} text-white {% endif %}">{{page.title}} 
+         <h1 class="heading-big {% if page.dark_header == false %} text-white {% endif %}">
 		 </h1>
          <ul class="page-title-meta list-inline {% if page.dark_header == false %} text-white {% endif %}">
-            <li class="list-inline-item"><i class="far fa-calendar"></i> {{page.date | date_to_long_string}}</li>
             {% for category in page.categories limit:1 %}
             <li class="list-inline-item">
                <a href="/category/{{ category | slugize }}/">
