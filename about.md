@@ -2,7 +2,7 @@
 layout: page
 title: About Us
 parmalink: /about
-dark_header: false
+dark_header: true
 post_video: /assets/images/beach.mp4
 ---
 ### About Us

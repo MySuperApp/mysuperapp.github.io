@@ -10,7 +10,7 @@ tags: [retirement,investing,smsf]
 categories: []
 author: false
 comments: false
-dark_header: false
+dark_header: true
 ---
 # Embark on a Financial Revolution with My-Super.App: Making SMSF Affordable for All
 
